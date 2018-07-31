@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="form.css">
-	<title>SIgn Up</title>
+	<link rel="stylesheet" type="text/css" href="css\form.css">
+	<title>Facculty Sign Up</title>
+	<script type="text/javascript" src="js\jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<link rel="shortcut icon" href="78569 (1).ico">
 </head>
 <body>
 <div class="lform" id="lf">	
 	<form>
-		<h1 id="sign">Sign Up <!-- <i class="fa fa-times" aria-hidden="true"></i> --> </h1>
+		<h1 id="sign">Faculty Sign Up</h1>
 		<label for="fname">Name:</label>
 		<br><input id=fname type="text" name="First name" required>
 		<p>Gender: 
-		<br><label for="Male">Male</label>
+		<label for="Male">Male</label>
 		<input id="Male" type="radio" name="gender">
 		<label for="Female">Female</label>
 		<input id="Female" type="radio" name="gender">
@@ -21,12 +22,16 @@
 		<input id="Other" type="radio" name="gender">
 		</p>
 		<p>
+		<label for="Unique">Unique ID:</label>
+		<input id="Unique" type="text" name="Unique" required>
+		</p>
+		<p>
 		<label for="Email">Email:</label>
 		<br><input id="Email" type="Email" name="Email" required>
 		</p>
 		<p>
 		<label for="Password">Password</label>
-		<br><input id="Password" type="Password" name="Password" pattern=".{5,10}" required title="5 to 10 characters">
+		<br><input id="Password" type="Password" name="Password" pattern=".{5,20}" required title="5 to 20 characters">
 		</p>
 		<p>Date Of Birth: 
 		<select name="Month">
@@ -49,9 +54,9 @@
 			<input type="checkbox" name="checkbox">
 
 		</p>
-		<button>Submit</button>
+		<button id="submit" class="abc">Submit</button>
 	</form>
 </div>
-<script type="text/javascript" src="form.js"></script>
+<script type="text/javascript" src="js\formfac.js"></script>
 </body>
 </html>
